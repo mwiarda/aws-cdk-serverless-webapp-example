@@ -1,0 +1,41 @@
+{
+  "name": "infrastructure",
+  "version": "0.1.0",
+  "bin": {
+    "infrastructure": "bin/infrastructure.js"
+  },
+  "scripts": {
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/node": "20.1.7",
+    "aws-cdk": "2.84.0",
+    "esbuild": "^0.18.5",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.0.4"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-amplify-alpha": "^2.84.0-alpha.0",
+    "@aws-cdk/aws-appsync-alpha": "^2.59.0-alpha.0",
+    "aws-cdk-lib": "2.84.0",
+    "aws-lambda": "^1.0.7",
+    "constructs": "^10.2.55",
+    "source-map-support": "^0.5.21"
+  },
+  "targets": {
+    "cdk-lambda": {
+      "context": "node",
+      "includeNodeModules": {
+        "aws-sdk": false
+      },
+      "sourceMap": false,
+      "minify": false,
+      "engines": {
+        "node": ">= 16"
+      }
+    }
+  }
+}

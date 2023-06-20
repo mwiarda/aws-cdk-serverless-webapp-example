@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.appConfig = void 0;
+exports.appConfig = {
+    name: "SampleApp"
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNvbmZpZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImFwcC5jb25maWcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBSWEsUUFBQSxTQUFTLEdBQWU7SUFDakMsSUFBSSxFQUFFLFdBQVc7Q0FDcEIsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbInR5cGUgQXBwQ29uZmlnID0ge1xyXG4gICAgbmFtZTogc3RyaW5nXHJcbn1cclxuXHJcbmV4cG9ydCBjb25zdCBhcHBDb25maWcgOiBBcHBDb25maWcgPSB7XHJcbiAgICBuYW1lOiBcIlNhbXBsZUFwcFwiXHJcbn0iXX0=
