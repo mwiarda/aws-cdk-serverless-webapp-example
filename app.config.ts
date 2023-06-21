@@ -1,7 +1,9 @@
 type AppConfig = {
-    name: string
+    name: string,
+    removalPolicy: string   // Will be casted to cdk.RemovalPolicy
 }
 
 export const appConfig : AppConfig = {
-    name: "SampleApp"
+    name: "SampleApp",
+    removalPolicy: "destroy"
 }

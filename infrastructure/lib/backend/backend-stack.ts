@@ -49,7 +49,7 @@ export class BackendStack extends cdk.Stack {
         requireSymbols: true,
       },
       accountRecovery: cognito.AccountRecovery.EMAIL_ONLY,
-      removalPolicy: cdk.RemovalPolicy.DESTROY, // Using destroy here to be able to remove the sample completely
+      removalPolicy: appConfig.removalPolicy as cdk.RemovalPolicy,
     });
     
     const domain = userPool.addDomain(`${appConfig.name}-cognito-domain`, {
@@ -89,7 +89,7 @@ export class BackendStack extends cdk.Stack {
       billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
       encryption: dynamodb.TableEncryption.DEFAULT,
       pointInTimeRecovery: true,
-      removalPolicy: cdk.RemovalPolicy.DESTROY, // Using destroy here to be able to remove the sample completely
+      removalPolicy: appConfig.removalPolicy as cdk.RemovalPolicy,
     });
   }
 
@@ -99,7 +99,7 @@ export class BackendStack extends cdk.Stack {
       encryption: s3.BucketEncryption.S3_MANAGED,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       enforceSSL: true,
-      removalPolicy: cdk.RemovalPolicy.DESTROY, // Using destroy here to be able to remove the sample completely
+      removalPolicy: appConfig.removalPolicy as cdk.RemovalPolicy,
     });
   }
 }
